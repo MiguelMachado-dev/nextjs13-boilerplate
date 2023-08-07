@@ -6,5 +6,5 @@ const buildEslintCommand = (filenames) =>
     .join(' --file ')}`
 
 module.exports = {
-  '*.{js,jsx,ts,tsx}': [buildEslintCommand, "yarn test --bail"],
+  '*.{js,jsx,ts,tsx}': [buildEslintCommand, "yarn test --findRelatedTests --bail"],
 }
